@@ -10,4 +10,3 @@ cards.forEach((card) => {
         }
     })
 })
-
