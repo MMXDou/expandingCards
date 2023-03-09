@@ -44,25 +44,29 @@ body {
 
 
 .card {
-  width: 5%;
+  /* width: 5%; */
+  flex: 0.5;
   position: relative;
   background-repeat: no-repeat;
   align-items: center;
   background-size: cover;
+  background-position: center;
   margin: 10px;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.7s;
-
+  /* transition: 0.7s; */
+  -webkit-transition: all 700ms ease-in;
 }
 
 .expanded {
 
-  width: 75%;
+  /* width: 75%; */
+  flex: 5;
 }
 
 .expanded h3 {
-  transition-delay: 0.5s;
-  transition: 1s;
+  /* transition-delay: 0.5s;
+  transition: 1s; */
+  transition: opacity 0.3s ease-in 0.4s;
   opacity: 1;
 }
