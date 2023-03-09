@@ -1,17 +1,13 @@
-var cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card');
 
-for (var i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click', function () {
-
-
-        if (!(this.classList.contains("expanded"))) {
-            // cards.classList.remove('expanded');
-            cards.forEach((card) => {
-                card.classList.remove('expanded');
+cards.forEach((card) => {
+    card.addEventListener('click', () => {
+        if (!(card.classList.contains("expanded"))) {
+            cards.forEach((cardEach) => {
+                cardEach.classList.remove('expanded');
             })
-            this.classList.add('expanded');
+            card.classList.add('expanded');
         }
-
     })
+})
 
-}
